@@ -1,16 +1,10 @@
-import React from "react";
-import { Text, View } from "react-native";
+import { View } from "react-native";
+import InstagramScreen from "../components/bottompart";
 
 export default function Index() {
   return (
-    <View
-      style={{
-        flex: 1,
-        justifyContent: "center",
-        alignItems: "center",
-      }}
-    >
-      <Text>Edit app/index.tsx to edit this screen.</Text>
+    <View>
+      <InstagramScreen />
     </View>
   );
 }
