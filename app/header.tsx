@@ -1,5 +1,5 @@
 
-import { Image, Pressable, Text, View } from "react-native";
+import { Button, Image, Pressable, Text, View } from "react-native";
 
 export default function HeaderRow() {
     return (
@@ -39,7 +39,6 @@ export default function HeaderRow() {
                 style={{
                     flex: 1,
                     flexDirection: "row",
-                    borderWidth: 3
                 }}>
                 <Image source={require("../assets/images/icon.png")}
                     style={{ height: 50, width: 50, marginLeft: 20, marginTop: 20 }} />
@@ -55,16 +54,17 @@ export default function HeaderRow() {
                     <Text>Number</Text>
                     <Text>Following</Text>
                 </View>
-                <View style={{ flexDirection: "column" }}>
-                    <Text>Hello</Text>
-                </View>
             </View>
-            <View style={{ flex: 1 }}>
-                <Text>Hello</Text>
+            <View style={{ marginTop: 30, marginLeft: 15 }}>
+                <Text>Placeholder</Text>
+                <Text>Placeholder</Text>
+                <Text>Placeholder</Text>
             </View>
-
-            <View style={{ flex: 2 }}></View>
-
+            <View style={{ marginLeft: 15, marginTop: 15, marginRight: 15, marginBottom: 15 }}>
+                <Button
+                    title="Member ∨"
+                    onPress={() => { }} />
+            </View>
         </View >
     );
 }
