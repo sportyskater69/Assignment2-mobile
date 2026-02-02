@@ -14,7 +14,7 @@ export default function InstagramScreen() {
 
 const styles = StyleSheet.create({
   container: {
-    flex: 1,
+    flex: 2,
     alignItems: "center",
     justifyContent: "center",
 
@@ -22,6 +22,7 @@ const styles = StyleSheet.create({
   image: {
     width: 415,
     height: 500,
-    marginTop: 190
+    marginTop: 190,
+    marginBottom: 180
   },
 });
