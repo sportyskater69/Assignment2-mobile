@@ -1,17 +1,17 @@
 
-import { Pressable, Text, View } from "react-native";
+import { Image, Pressable, Text, View } from "react-native";
 
 export default function HeaderRow() {
     return (
         <View
             style={{
-                borderWidth: 5,
-                height: 500,
+
+                flex: 1
             }}>
             <View
                 style={{
                     flexDirection: "row",
-                    borderWidth: 5
+
                 }}>
                 <Pressable onPress={() => { }}>
                     <Text
@@ -28,15 +28,43 @@ export default function HeaderRow() {
                     style={{
                         flex: 1,
                         alignItems: "center",
-                        height: 100,
                         marginTop: 15
                     }}>
                     <Text style={{}}>Your Profile</Text>
                     <Text style={{}}>Profile Name</Text>
                 </View>
-                <Text style={{ marginLeft: 80, marginRight: 15, marginTop: 15, marginBottom: 80, fontSize: 30 }}>+</Text>
+                <Text style={{ marginLeft: 80, marginRight: 15, marginTop: 15, marginBottom: 30, fontSize: 30 }}>+</Text>
             </View>
-            <Text>Hi</Text>
+            <View
+                style={{
+                    flex: 1,
+                    flexDirection: "row",
+                    borderWidth: 3
+                }}>
+                <Image source={require("../assets/images/icon.png")}
+                    style={{ height: 50, width: 50, marginLeft: 20, marginTop: 20 }} />
+                <View style={{ marginLeft: 30, padding: 15 }}>
+                    <Text>Number</Text>
+                    <Text>Posts</Text>
+                </View>
+                <View style={{ padding: 15 }} >
+                    <Text>Number</Text>
+                    <Text>Followers</Text>
+                </View>
+                <View style={{ padding: 15 }}>
+                    <Text>Number</Text>
+                    <Text>Following</Text>
+                </View>
+                <View style={{ flexDirection: "column" }}>
+                    <Text>Hello</Text>
+                </View>
+            </View>
+            <View style={{ flex: 1 }}>
+                <Text>Hello</Text>
+            </View>
+
+            <View style={{ flex: 2 }}></View>
+
         </View >
     );
 }
