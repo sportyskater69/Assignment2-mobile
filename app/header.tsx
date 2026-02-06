@@ -24,41 +24,43 @@ export default function HeaderRow() {
                     style={{
                         flex: 1,
                         alignItems: "center",
-                        marginTop: 15
+                        marginTop: 25
                     }}>
                     <Text style={{}}>Your Profile</Text>
                     <Text style={{}}>Profile Name</Text>
                 </View>
-                <Text style={{ marginLeft: 80, marginRight: 15, marginTop: 15, marginBottom: 30, fontSize: 30 }}>+</Text>
+                <Text style={{ marginLeft: 80, marginRight: 15, marginTop: 25, marginBottom: 20, fontSize: 30 }}>+</Text>
             </View>
             <View
                 style={{
                     flexDirection: "row",
                 }}>
-                <Image source={require("../assets/images/icon.png")}
-                    style={{ height: 50, width: 50, marginLeft: 20, marginTop: 20 }} />
-                <View style={{ marginLeft: 30, padding: 15 }}>
-                    <Text>Number</Text>
-                    <Text>Posts</Text>
+                <Image source={require("../assets/images/profile-photo.png")}
+                    style={{ height: 100, width: 100, marginLeft: 10 }} />
+                <View style={{ marginLeft: 30, padding: 15, marginTop: 15 }}>
+                    <Text style={{ marginLeft: 8, fontSize: 20, fontWeight: "bold" }}>53</Text>
+                    <Text style={{ fontSize: 16 }}>Posts</Text>
                 </View>
-                <View style={{ padding: 15 }} >
-                    <Text>Number</Text>
-                    <Text>Followers</Text>
+                <View style={{ padding: 15, marginTop: 15 }} >
+                    <Text style={{ marginLeft: 20, fontSize: 20, fontWeight: "bold" }}>12</Text>
+                    <Text style={{ fontSize: 16 }}>Members</Text>
                 </View>
-                <View style={{ padding: 15 }}>
-                    <Text>Number</Text>
-                    <Text>Following</Text>
+                <View style={{ padding: 15, marginTop: 15 }}>
+                    <Text style={{ marginLeft: 22, fontSize: 20, fontWeight: "bold" }}>1</Text>
+                    <Text style={{ fontSize: 16 }}>Admins</Text>
                 </View>
             </View>
             <View style={{ marginTop: 5, marginLeft: 15 }}>
-                <Text>Placeholder</Text>
-                <Text>Placeholder</Text>
-                <Text>Placeholder</Text>
+                <Text style={{ fontWeight: "bold" }}>OOTD Everyday</Text>
+                <Text>Fit check!</Text>
+                <Text>You know we&apos;ll hype you up.</Text>
             </View>
             <View style={{ marginLeft: 15, marginTop: 15, marginRight: 15, marginBottom: 15 }}>
                 <Button
                     title="Member ∨"
-                    onPress={() => { }} />
+                    onPress={() => { }}
+                    color="#ffff"
+                />
             </View>
         </View >
     );

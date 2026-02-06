@@ -6,7 +6,7 @@ import HeaderRow from "./header";
 
 export default function Index() {
   return (
-    <View style={{ flex: 1 }}>
+    <View style={{ flex: 1, backgroundColor: "#ffff" }}>
       <HeaderRow />
       <InstagramScreen />
       <BottomButtons />
