@@ -1,5 +1,5 @@
 
-import { Button, Image, Pressable, Text, View } from "react-native";
+import { Image, Pressable, Text, TouchableOpacity, View } from "react-native";
 
 export default function HeaderRow() {
     return (
@@ -26,8 +26,8 @@ export default function HeaderRow() {
                         alignItems: "center",
                         marginTop: 25
                     }}>
-                    <Text style={{}}>Your Profile</Text>
-                    <Text style={{}}>Profile Name</Text>
+                    <Text style={{ fontWeight: "bold", fontSize: 18 }}>Group Profile</Text>
+                    <Text style={{ color: "grey" }}>ootd_everyday</Text>
                 </View>
                 <Text style={{ marginLeft: 80, marginRight: 15, marginTop: 25, marginBottom: 20, fontSize: 30 }}>+</Text>
             </View>
@@ -55,13 +55,31 @@ export default function HeaderRow() {
                 <Text>Fit check!</Text>
                 <Text>You know we&apos;ll hype you up.</Text>
             </View>
-            <View style={{ marginLeft: 15, marginTop: 15, marginRight: 15, marginBottom: 15 }}>
-                <Button
-                    title="Member ∨"
+            <View style={{ margin: 15 }}>
+                <TouchableOpacity
                     onPress={() => { }}
-                    color="#ffff"
-                />
+                    style={{
+                        backgroundColor: 'white',
+                        borderColor: 'grey',
+                        borderWidth: 1,
+                        paddingVertical: 5,
+                        paddingHorizontal: 20,
+                        alignItems: 'center',
+                    }}
+                >
+                    <Text
+                        style={{
+                            color: 'black',
+                            fontSize: 16,
+                            fontWeight: '500',
+                        }}
+                    >
+                        Member v
+                    </Text>
+                </TouchableOpacity>
             </View>
+
+
         </View >
     );
 }
